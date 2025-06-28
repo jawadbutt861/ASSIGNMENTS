@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,4 +24,123 @@
     </div>
     
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grid Image Gallery</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(5, 150px);
+      gap: 6px;
+      width: 90vw;
+      max-width: 1400px;
+      background: #222;
+      border-radius: 6px;
+      overflow: hidden;
+      
+    }
+    .gallery > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+
+    img:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 3;
+    }
+    img:nth-child(2) {
+      grid-column: 3 / 4;
+      grid-row: 1 / 3;
+    }
+    img:nth-child(3) {
+      grid-column: 4 / 5;
+      grid-row: 1 / 2;
+    }
+    img:nth-child(4) {
+      grid-column: 5 / 7;
+      grid-row: 1 / 2;
+    }
+    img:nth-child(5) {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+    }
+    img:nth-child(6) {
+      grid-column: 3 / 4;
+      grid-row: 3 / 5;
+    }
+    img:nth-child(7) {
+      grid-column: 4 / 5;
+      grid-row: 2 / 3;
+    }
+    img:nth-child(8) {
+      grid-column: 5 / 6;
+      grid-row: 2 / 3;
+    }
+    img:nth-child(9) {
+      grid-column: 6 / 7;
+      grid-row: 2 / 3;
+    }
+    img:nth-child(10) {
+      grid-column: 1 / 2;
+      grid-row: 4 / 6;
+    }
+    img:nth-child(11) {
+      grid-column: 2 / 3;
+      grid-row: 4 / 6;
+    }
+    img:nth-child(12) {
+      grid-column: 4 / 5;
+      grid-row: 3 / 6;
+    }
+    img:nth-child(13) {
+      grid-column: 5 / 6;
+      grid-row: 3 / 4;
+    }
+    img:nth-child(14) {
+      grid-column: 6 / 7;
+      grid-row: 3 / 6;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery" >
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e1eda56e-4f71-4bb9-8a76-3f8f913f4adc.png" alt="Moody fjord landscape with small white house by water under dark cloudy sky" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88b29652-ea38-4530-9f37-845e0cb3489d.png" alt="Night sky with vibrant purple-pink Milky Way galaxy and silhouette of three mountain peaks" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/58ee6a29-eaf0-4030-b7a2-958cdb3930a3.png" alt="Sunlit craggy mountain range with blue skies and clouds" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6723c489-d08e-4e85-a822-f2058bef34e0.png" alt="Golden light shining down waterfall on rocky cliff during sunset" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/692ffcb3-d45e-492c-b0c7-756731a035bc.png" alt="Aerial view of turquoise blue bay surrounded by dense green forest and boats" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/186d58cb-b8ad-452f-9b51-2a1578784ac5.png" alt="Towering mountain illuminated by golden sunset with snow covered ground below" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/33ea88df-ad5a-445e-99b7-fa7a3a2d9a18.png" alt="Tall waterfall plunging amid dark green forest with a rock in foreground" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1576e5fc-d608-457c-95b8-ca7f5453188a.png" alt="Aerial top-down photo of small island with trees surrounded by dark blue water" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7d91be0a-a388-48e1-9eb6-f45b830f58b9.png" alt="Steep mountain cliffs surrounding a calm narrow lake" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/10d52199-68bd-4aa3-87ec-d51551a6878d.png" alt="Large canyon landscape with small figures standing near rocky outcrop under cloudy sky" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a0e8b4e3-8e87-4b3d-91ab-8bdc256db7a1.png" alt="Snow covered mountain peaks with forest below under clear blue sky" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c8c8707e-ffc6-4040-a453-42b7d7758e54.png" alt="Mountain lake surrounded by steep green cliffs and waterfall cascading down" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3a831f31-6271-4525-84d3-78f50628c6cf.png" alt="Dark rocky canyon with water reflecting tall cliffs in black and white style" />
+    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1c4da2e1-0c19-4b4e-9a92-4b384e1490ca.png" alt="Aerial view of turquoise ocean with underwater rock formations and sandy white beach" />
+  </div>
+</body>
 </html>
+
