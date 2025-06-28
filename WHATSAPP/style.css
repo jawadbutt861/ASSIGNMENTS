@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{font-family: Arial, Helvetica, sans-serif;}
+.head{
+    background-color:ghostwhite;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+.head>img{
+    width: 25px;
+    height: 25px;
+}
+.head>p{
+    font-size: 17px;
+}
+.main{
+    display: flex;
+    /* overflow-y: scroll; */
+}
+.side{
+    width: 3rem;
+    height: 564px;
+    background-color: ghostwhite;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+.top{
+    /* width: 3rem; */
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+.top>img{
+    width:20px;
+}
+hr{
+    color: gray;
+    height: 2rem;
+    transform: rotate(90deg);
+}
+.top>img:hover{
+    cursor: pointer;
+}
+.bottom{
+    /* width: 3rem; */
+    /* background-color: thistle; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+.bottom>img{
+    width:20px;
+}
+.dp{
+    border-radius: 10px;
+}
+.bottom>img:hover{
+    cursor: pointer;
+}
+.contacts{
+    width: 25rem;
+    height: 564px;
+   /* border: 1px solid black; */
+   border-radius: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header>p{
+    font-size: 20px;
+}
+.header-icons>img{
+    width: 20px;
+    cursor: pointer;
+}
+.header-icons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.search{
+    position: relative;
+    margin-top: 1rem;
+}
+.search>img{
+    width: 20px;
+    position: absolute;
+    top: 3px;
+    left: 300px;
+}
+.search>input{
+    padding: 5px;
+    width: 320px;
+    border-radius: 5px;
+    margin-left: 10px;
+    border: 1px solid gray;
+}
+.search>input:active{
+    border-bottom: 2px solid green;
+}
+.chat{
+    padding: 5px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+.pp>img{
+    width: 4rem;
+}
+.naam{
+    display: flex; 
+    align-items: center;
+    gap: 10rem;
+}
+.name{
+    font-size: 18px;
+}
+.time{
+    font-size: 13px;
+}
+.msg>p{
+    font-size: 13px;
+}
+.chatting{
+    width: 100%;
+    height: 564px;
+    background-color:ghostwhite;
+}
+.call{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    margin-left: 5px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.profile>img{
+    width: 3rem;
+    border-radius: 30px;
+}
+.call-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+.call-icon>img{
+    width: 1.5rem;
+    border-radius: 30px;   
+}
+.message{
+    margin-top: 10px;
+    height: 31rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.rm{
+    font-size: 13px;
+    /* width: max-content; */
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+.r{
+    width: max-content;
+    border-radius: 0 5px 5px 5px;
+    padding: 5px;
+    background-color: rgb(228, 224, 224);
+}
+.s{
+    width: max-content;
+    border-radius: 5px 0 5px 5px;
+    padding: 5px;
+    background-color: rgb(98, 218, 98);
+}
+.sm{
+    font-size: 13px;
+    /* width: max-content; */
+    margin-top: 5px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.input>img{
+    width: 1.5rem;
+    position: absolute;
+    bottom: 25px;
+
+}
+.input>input{
+    padding: 8px;
+    width: 85%;
+    position: absolute;
+    bottom: 20px;
+    left: 4.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.input{
+    position: relative;
+    /* height: 23rem; */
+    display: flex;
+    background-color: white;
+    align-items: center;
+}
+.four{
+    left: 940px;
+}
+.three{
+    left: 910px;
+}
+.two{
+    left: 40px;
+}
+.one{
+    left: 5px;
+}

@@ -1,0 +1,21 @@
+.bulb{
+    background-image: url(./OFF.jpg);
+    width: 30rem;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition-duration: 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+
+}
+.bulb:hover{
+    background-image: url(./ON.jpg);
+    cursor: pointer;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

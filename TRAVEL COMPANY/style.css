@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+.header{
+    background-image: url(./trave1.jpg);
+    width: 100%;
+    height: 35rem;
+    
+    background-position:bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.head{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.head>h3{
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.head>h1{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.book{
+    border: none;
+    background-color: rgb(47, 184, 47);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.book:hover{
+    background-color:rgb(41, 117, 41) ;
+    cursor: pointer;
+}
+.img1{
+    width: 20px; 
+    height: 20px;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 5rem;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+    gap: 3rem;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    height: 5rem;
+}
+.nav{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    width: 90%;
+    position:absolute;
+    top: 60px;
+    margin-left: 63px;            
+}
+.navigation ul{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+
+}
+.navigation ul a{
+     text-decoration: none;
+     color: black;
+     font-size: 18px;
+     font-weight: bold;
+}
+ul>li>a:hover{
+    color: rgb(47, 179, 47);
+}
+.navigation{
+    margin-right: 5rem;
+}
+.h1>h1{
+    margin-left: 3rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about{
+    background-color: rgba(173, 157, 157, 0.5);
+    width: 100%;
+    height: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.about-txt{
+    background-color: white;
+    height: 30rem;
+    width: 36rem;
+    position: relative;
+    right: 5rem;
+    padding: 30px;
+    border-radius: 5px;
+}
+.about-p{
+    color:rgb(47, 179, 47);
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+
+}
+.book-2{
+    border: none;
+    background-color: rgb(90, 143, 59);
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.book-2:hover{
+    background-color:rgb(35, 63, 17);
+    cursor: pointer;
+}

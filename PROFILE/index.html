@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        ul {
+            list-style-type: none;
+            margin: 40px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            font-weight: bold;
+        }
+        .boxes{
+            width: 65%;
+            margin:5% 0% 5% 15%;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            overflow:auto;
+        }
+        .box1{
+            padding: 30px;
+            width: 35rem;
+        }
+        .box1>img{
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 20px 5px 0px;
+
+        }
+        .box1>h1{
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .box1>p{
+            font-size: 20px;
+            /* width: 40rem; */
+        }
+        .box1>h5{
+            font-size: 20px;
+            padding-top: 110px;
+        }
+        .box2>img{
+            width: 250px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>BIO</li>
+        <li>PORTFOLIO</li>
+        <li>PODCAST</li>
+        <li>BLOG</li>
+    </ul>
+    <div class="boxes">
+        <div class="box1">
+            <h1>Jawad Safdar</h1>
+            <p>I'm a dedicated Web Developer and a passionate learner. I love to learn new things and implement them in my projects and I'm located in Quetta,Pakistan</p>
+            <h5>@reallygreatsite</h5>
+            <img src="./chat.png" alt="">
+            <img src="./email.png" alt="">
+            <img src="./facebook.png" alt="">
+            <img src="./twitter.png" alt="">
+        </div>
+        <div class="box2">
+            <img src="./profile.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

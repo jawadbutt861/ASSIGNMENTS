@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div>img{
+            height: 20rem;
+            opacity: 40%;
+            cursor: pointer;
+        }
+        img:hover{
+            opacity: 100%;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+        }
+        button{
+            padding: 10px;
+            background-color: green;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            animation: scale 3s infinite;
+        }
+        @keyframes scale {
+            0%{
+                transform: scale(1);
+            }
+            25%{
+                transform: scale(1.2);
+            }
+            50%{
+                transform: scale(1);
+            }
+            75%{
+                transform: scale(1.2);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./1.jpg" alt="">
+        <img src="./2.jpg" alt="">
+        <img src="./3.jpg" alt="">
+        <img src="./4.jpg" alt="">
+        <img src="./5.jpg" alt="">
+        <img src="./6.jpg" alt="">
+        
+    </div>
+
+    <button>CLick Me</button>
+</body>
+</html>

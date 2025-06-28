@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:wheat;
+        }
+        .box{
+         width: 40rem;   
+         height: 20rem;
+         background-position: center;
+         opacity:90%;
+         border-radius: 20px;
+         background-size: cover;
+         animation: move 10s infinite;
+
+        }
+
+        @keyframes move{
+            0%{
+                background-image:url(./car1.webp);
+            }
+            25%{
+                background-image:url(./car2.webp);
+            }
+            50%{
+                background-image:url(./car3.webp);
+            }
+            75%{
+                background-image:url(./car4.webp);
+            }
+            100%{
+                background-image:url(./car5.webp);
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+        
+    </div>  
+</body>
+</html>

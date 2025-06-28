@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+        #text{
+            animation: rotate 2s linear;
+        }
+        @keyframes rotate{
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(720deg);
+            }
+        }
+    </style>
+  </head>
+</head>
+<body>
+    <div class="flex justify-center items-center m-8 p-8 flex-col">
+    <p id="text" class="text-red-600 text-6xl max-w-max p-4 font-serif"></p>
+    
+    <button id="click" onclick="clickme()" class="border rounded-md p-2 font-bold text-red-600 cursor-pointer hover:scale-110 duration-700">Click Me</button>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

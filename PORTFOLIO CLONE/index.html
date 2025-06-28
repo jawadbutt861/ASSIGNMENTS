@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: grey;
+        }
+        div.header{
+            background-image: url(./parallax1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 75vh;
+            opacity: 60%;
+        }
+        .header{
+            display: flex;
+        }
+        img{
+            width: 1rem;
+            height: 1rem;
+            margin-top: 3px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: bold;
+        }
+        .hover{
+            display: flex;
+            justify-content: center;
+            margin-left: 2rem;
+            padding: 0.5rem;
+            gap: 3px;
+            height: 1rem;
+        }
+        .search{
+           margin-left: 45rem;
+        }
+        .hover:hover{
+            background-color: rgb(126, 118, 118);
+        }
+        .search:hover{
+            background-color: rgb(230, 56, 56);
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           color: grey;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           padding: 70px;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .para{
+            width: 65rem;
+        }
+        .intro{
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+        }
+        .intro p{
+            width: 30rem;
+        }
+        .name{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: grey;
+            gap: 1rem;
+        }
+        .pic img{
+            width: 26rem;
+            height: 18rem;
+            opacity: 60%;
+        }
+        .pic img:hover{
+            opacity: 100%;
+            transition: opacity 0.5s;
+        }
+        .para2 p{
+            margin-left: 3rem;
+            color: grey;
+            width: 30rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .load{
+            display:flex ;
+            margin-left: 13rem;
+            flex-direction: column;
+           
+        }
+        .photo{
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: bolder;
+            letter-spacing: 6px;
+        }
+        .load1>.right{
+            width: 50rem;
+            height: 2rem;
+        }
+        .load1{
+            display:flex ;
+            
+        }
+        .left{
+            width:5rem ;
+        }
+        .load2>.right2{
+            width: 47rem;
+            height: 2rem;
+        }
+        .load2{
+            display:flex ;
+            
+        }
+        .left2{
+            width:8rem ;
+        }
+        .load3>.right3{
+            width: 43rem;
+            height: 2rem;
+        }
+        .load3{
+            display:flex ;
+            
+        }
+        .left3{
+            width:12rem ;
+        }
+        .num{
+      
+            background-color: rgb(53, 51, 51);
+            color: white;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15rem;
+            font-weight: bold;
+           
+        }
+        .portfo{
+            background-image: url(./parallax2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 15rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            background-position: center;
+            align-items: center;
+            font-weight: bold;
+            
+        }
+        .img2{
+            background-image: url(./parallax3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 20rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            background-position: center;
+            align-items: center;
+            font-weight: bold;
+            opacity: 70%;
+            margin-top: 3rem;
+        }
+        .img2>h1{
+            letter-spacing: 1rem;
+        }
+        .portfo>h1{
+            letter-spacing: 2rem;
+        }
+        .work1 img{
+            width: 15rem;
+            height: 15rem;
+        }
+        .work2 img{
+            width: 15rem;
+            height: 15rem;
+        }
+        
+        .my-work{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .work>img:hover{
+            opacity: 50%;
+            cursor: pointer;
+        }
+        button{
+            background-color: rgb(151, 142, 142);
+            border: none;
+            padding: 1rem;
+            font-weight: bold;
+          
+        }
+        .btn{
+            margin-top: 2rem;
+        }
+        button:hover{
+            background-color: rgb(80, 79, 79);
+            cursor: pointer;
+        }
+        .feed{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .add{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+        .img4>img{
+            width: 18rem;
+            height: 12rem;
+            border-radius: 5px;
+        }
+        
+        .loc{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+            
+        }
+        .email{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+            margin-left: 80px;
+            
+        }
+        .call{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+            margin-left: 60px;
+            height: 0.5rem;
+        }
+        .cup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .footer{
+            margin-top: 5rem;
+            height: 20rem;
+            background-color: grey;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .social>img{
+            width: 2rem;
+            height: 2rem;
+            transition-duration: 0.5s;
+        }
+        .social>img:hover{
+            cursor: pointer;
+            transform: scale(1.2);
+        }
+        .btn2>button:hover{
+            background-color: gray;
+            color: black;
+        }
+        .snd{
+            background-color: black;
+             color: white; 
+             border-radius: 5px; 
+             font-weight: bold;
+        }
+        /* Existing CSS remains unchanged above this point */
+
+@media (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hover {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    .search {
+        margin-left: 0;
+    }
+
+    .main {
+        padding: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro p {
+        width: 90%;
+        text-align: center;
+    }
+
+    .load {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .load1, .load2, .load3 {
+        width: 90%;
+    }
+
+    .num {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .num > div {
+        margin: 10px 0;
+    }
+
+    .my-work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work1, .work2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work1 img, .work2 img {
+        width: 100%;
+        max-width: 200px; /* Adjust max width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5px;
+    }
+
+    .add {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .msg {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .msg input {
+        width: 90%;
+        max-width: 300px; /* Limit max width */
+    }
+
+    .btn2 {
+        margin-left: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social > img {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .hover {
+        margin: 0.5rem 0;
+    }
+
+    .search {
+        margin: 0.5rem 0;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro p {
+        width: 90%;
+        text-align: center;
+    }
+
+    .load {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .load1, .load2, .load3 {
+        width: 90%;
+    }
+
+    .num {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .num > div {
+        margin: 10px 0;
+    }
+
+    .my-work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work1, .work2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .work1 img, .work2 img {
+        width: 100%;
+        max-width: 150px; /* Adjust max width for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+        margin: 5px;
+    }
+
+    .add {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .msg {
+        flex-direction: column;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .msg input {
+        width: 90%;
+        max-width: 250px; /* Limit max width */
+    }
+
+    .btn2 {
+        margin-left: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social > img {
+        margin: 5px;
+    }
+}
+        
+    </style>
+</head>
+<body>
+    
+    <div class="header">
+        
+        <div class="home hover">
+            <a href="">HOME</a>
+        </div>
+
+        <div class="about hover">
+        <img src="./dots-menu.png" alt="">
+            <a href="">ABOUT</a>
+        </div>
+
+        <div class="port hover">
+            <img src="./user.png" alt="">
+            <a href="">PORTFOLIO</a>
+        </div>
+
+        <div class="contact hover">
+            <img src="./email.png" alt="">
+            <a href="">CONTACT</a> 
+        </div>   
+        
+        <div class="search hover">
+            <img src="./search-interface-symbol.png" alt="">
+        </div>
+
+        </div>
+        
+
+        <div class="main">
+            <h3>ABOUT ME</h3>
+            <p class="italic">I love photography</p>
+            <p class="para">We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <div class="intro">
+            <div class="pics">
+                <div class="name">
+                    <img src="./user.png" alt="">
+                    <h4>My Name</h4>
+                </div>
+                <div class="pic">
+                    <img src="https://www.w3schools.com/w3images/avatar_hat.jpg" alt="">
+                </div>
+            </div>
+            <div class="para2">
+                <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+        
+        <p style="text-align: center; margin-top: 2rem; color: gray;">Im really good at:</p>
+
+        <div class="load">
+
+            <div class="photo">
+                <img src="./dslr-camera.png" alt="">
+                <p>Photography</p>
+            </div>
+
+            <div class="load1">
+                <p class="right" style="background-color: rgb(53, 51, 51); text-align: center;">90%</p>
+                <p class="left" style="background-color: rgb(201, 205, 209);"></p>
+            </div>
+
+            <div class="photo">
+                <img src="./laptop.png" alt="">
+                <p>Web Design</p>
+            </div>
+
+            <div class="load2">
+                <p class="right2" style="background-color: rgb(53, 51, 51); text-align: center;">85%</p>
+                <p class="left2" style="background-color: rgb(201, 205, 209);"></p>
+             </div>
+
+        <div class="photo">
+            <img src="./photo.png" alt="">
+            <p>Photoshop</p>
+        </div>
+
+        <div class="load3">
+            <p class="right3" style="background-color: rgb(53, 51, 51); text-align: center;">75%</p>
+            <p class="left3" style="background-color: rgb(201, 205, 209);"></p>
+         </div>
+
+        </div>
+
+        <div class="num">
+            <div class="part">
+                <p>14+</p>
+                <p>Partners</p>
+            </div>
+
+            <div class="pro" >
+                <p>55+</p>
+                <p>Projects Done</p>
+            </div>
+
+            <div class="happy">
+                <p>89+</p>
+                <p>Happy Clients</p>
+            </div>
+
+            <div class="meet">
+                <p>150+</p>
+                <p>Meetings</p>
+            </div>
+            
+        </div>
+
+        <div class="portfo">
+            <h1>PORTFOLIO</h1>
+        </div>
+
+        <div class="my-work">
+            <h1>MY WORK</h1>
+            <p>Here are some of my latest lorem work ipsum tipsum.</p>
+            <p style="margin-bottom: 4rem;">Click on the images to make them bigger </p>
+
+            <div class="work1 work">
+                <img src="https://www.w3schools.com/w3images/p1.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/p2.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/p3.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/p4.jpg" alt="">
+
+            </div>
+            <div class="work2 work">
+                <img src="https://www.w3schools.com/w3images/p5.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/p6.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/p7.jpg" alt="">
+                <img src="https://www.w3schools.com/w3images/p8.jpg" alt="">
+            </div>
+        </div>
+
+        <center>
+            <div class="btn">
+                <button style="border-radius: 4px;">LOAD MORE</button>
+            </div>
+            
+        </center>
+
+        <div class="img2">
+            <h1>CONTACT</h1>
+        </div>
+
+        <div class="feed">
+            <h1 style="margin-top: 3rem;">Where I Work</h1>
+            <h3 style="font-style: italic; margin: 0;">I'd love your feedback!</h3>
+        </div>
+
+        <div class="add">
+            <div class="img4">
+                <img src="https://www.w3schools.com/w3images/map.jpg" alt="">
+            </div>
+
+            <div class="address">
+                <div class="loc">
+                    <img src="./maps-and-flags.png" alt="">
+                    <h4>Chicago, US</h4>
+                </div>
+
+                <div class="call">
+                    <img src="./call.png" alt="">
+                    <h4> Phone: +00 151515</h4>
+                </div>
+
+                <div class="email">
+                    <img src="./email.png" alt="">
+                    <h4> Email: mail@mail.com</h4>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="cup">
+            <p style="font-weight: bold;">Swing by for a cup of , or leave me a note:</p>
+
+            <div class="msg">
+                <input type="text" name="" id="" placeholder="NAME" style="width: 17rem; height: 2rem; padding-left: 5px; border: 1px solid grey; border-radius: 5px;">
+
+                <input type="email" name="" id="" placeholder="EMAIL" style="width: 17rem; height: 2rem; padding-left: 5px;  border: 1px solid grey; border-radius: 5px;">
+            </div>
+
+            <div class="msg">
+                <input type="text" name="" id="" placeholder="MESSAGE" style="width: 35rem; height: 2rem; margin-top: 5px; padding-left: 5px; border: 1px solid grey; border-radius: 5px;">
+            </div>
+
+            <div class="btn2" style="margin-top: 1rem; margin-left: 28rem;">
+                <button class="snd" style="">Send Message</button>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="social">
+                <img src="./instagram.png" alt="">
+                <img src="./pinterest.png" alt="">
+                <img src="./twitter.png" alt="">
+                <img src="./facebook.png" alt="">
+                <img src="./linkedin.png" alt="">
+                <img src="./chat.png" alt="">
+            </div>
+        </div>
+</body>
+</html>
