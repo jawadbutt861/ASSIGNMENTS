@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani</title>
+    <link rel="stylesheet" href="./Styles/style.css">
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+     <header class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+     <img src="./Assets/logo.png" alt="" class="w-60 cursor-pointer">
+    </a>
+    <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center gap-2">
+      <a style="font-size: 14px;" class="mr-5 hover:text-gray-900">About</a>
+      <a style="font-size: 14px;" class="mr-5 hover:text-gray-900">Services</a>
+      <a style="font-size: 14px;" class="mr-5 hover:text-gray-900">Media</a>
+      <a style="font-size: 14px;" class="mr-5 hover:text-gray-900">Contact Us</a>
+      <a style="font-size: 14px;" class="mr-5 hover:text-gray-900">Bank Details</a>
+      <a style="font-size: 14px;" class="mr-5 hover:text-gray-900">Other Websites</a>
+      <button style="background-color: #3b82f6; color: white; font-size: 14px;" class="inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">BE A SPONSOR</button>
+      <button style="background-color: #3b82f6; color: white; font-size: 14px;" class="inline-flex items-center border-0 py-1 px-3 focus:outline-none rounded text-base mt-4 md:mt-0">DONATE NOW</button>
+    </nav>
+
+  </div>
+</header>
+
+<!-- Hero -->
+ <section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Welcome to the <span style="color: #8dc63f;"> Saylani</span> Welfare
+        <br class="hidden lg:inline-block">Non Governmental Organization
+        <br>in Pakistan
+      </h1>
+      <p class="mb-8 leading-relaxed">Saylani Welfare is on the ground and already working with local communities to assess how best to support underprivileged families in more than 63 areas of day to day lives.</p>
+      <div class="flex justify-center">
+         <button style="border: 1px solid grey; padding: 10px;" class="inline-flex items-center border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Learn More
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+        <path d="M5 12h14M12 5l7 7-7 7"></path>
+      </svg>
+    </button>
+      </div>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img style="width: 600px;" class="object-cover object-center rounded" alt="hero" src="./Assets/hero-img.webp">
+    </div>
+  </div>
+</section>
+
+<!-- Carousel -->
+ <div class="flex justify-center items-center">
+
+
+<div id="default-carousel" class="relative w-300" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./Assets/carousel-1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./Assets/carousel-2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+</div>
+
+<!-- content -->
+ <section class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4 gap-3">
+      
+      <div class="lg:w-1/4 md:w-1/2 p-4 " style="background-color: #f0fcdb; width: 200px;">
+        <a class=" relative h-48 rounded overflow-hidden flex flex-col justify-center items-center gap-2 w-40">
+          <img alt="ecommerce" class="object-cover object-center w-15 block" src="./Assets/c-1.webp">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Welfare</h2>
+        </a>
+      </div>
+
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-40 " style="background-color: #f0fcdb; width: 200px;">
+        <a class=" relative h-48 rounded overflow-hidden flex flex-col justify-center items-center gap-2 w-40">
+          <img alt="ecommerce" class="object-cover object-center w-15 block" src="./Assets/c-2.webp">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Medical</h2>
+        </a>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-40 " style="background-color: #f0fcdb; width: 200px;">
+        <a class=" relative h-48 rounded overflow-hidden flex flex-col justify-center items-center gap-2 w-40">
+          <img alt="ecommerce" class="object-cover object-center w-10 block" src="./Assets/c-3.webp">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Online Sadqah</h2>
+        </a>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-40 " style="background-color: #f0fcdb; width: 200px;">
+        <a class=" relative h-48 rounded overflow-hidden flex flex-col justify-center items-center gap-2 w-40">
+          <img alt="ecommerce" class="object-cover object-center w-15 block" src="./Assets/c-4.webp">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Clean Water</h2>
+        </a>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-40 " style="background-color: #f0fcdb; width: 200px;">
+        <a class=" relative h-48 rounded overflow-hidden flex flex-col justify-center items-center gap-2 w-40" >
+          <img alt="ecommerce" class="object-cover object-center w-15 block" src="./Assets/c-5.webp">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Education</h2>
+        </a>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 p-4 w-40 " style="background-color: #f0fcdb; width: 200px;">
+        <a class=" relative h-48 rounded overflow-hidden flex flex-col justify-center items-center gap-2 w-40">
+          <img alt="ecommerce" class="object-cover object-center w-15 block" src="./Assets/c-6.webp">
+          <h2 class="text-gray-900 title-font text-lg font-medium">Food</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Cards -->
+
+
+</body>
+</html>
