@@ -1,0 +1,29 @@
+.head>h1{
+    text-align: center;
+}
+#personal>input,label,textarea{
+    margin: 10px;
+}
+#personal{
+    width: 75%;
+}
+#Education>table{
+    border-collapse: collapse;   
+}
+table>tr>th,td{
+    padding: 10px;
+}
+#Education{
+    margin-top: 15px;
+    width: 75%;
+}
+.box{
+    background-color: aquamarine;
+}
+button{
+    margin: 10px ;
+}
+p{
+    margin: 10px;
+}
+

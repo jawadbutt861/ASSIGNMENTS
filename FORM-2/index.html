@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #74ebd5, #ACB6E5);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 600px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #5d9cec;
+      box-shadow: 0 0 5px rgba(93, 156, 236, 0.5);
+      outline: none;
+    }
+
+    .submit-btn {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .submit-btn:hover {
+      background: linear-gradient(135deg, #5a67d8, #6b46c1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 600px) {
+      .form-container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <form class="form-container" action="https://formsubmit.co/jawadbutt861@gmail.com" method="POST">
+    <h2>Registration Form</h2>
+
+    <div class="form-group">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="fatherName">Father's Name</label>
+      <input type="text" id="fatherName" name="fatherName" required>
+    </div>
+
+    <div class="form-group">
+      <label for="husbandName">Husband's Name (Optional)</label>
+      <input type="text" id="husbandName" name="husbandName">
+    </div>
+
+    <div class="form-group">
+      <label for="city">City</label>
+      <select id="city" name="city" required>
+        <option value="">--Select City--</option>
+        <option>Karachi</option>
+        <option>Lahore</option>
+        <option>Islamabad</option>
+        <option>Rawalpindi</option>
+        <option>Faisalabad</option>
+        <option>Multan</option>
+        <option>Quetta</option>
+        <option>Peshawar</option>
+        <option>Sialkot</option>
+        <option>Hyderabad</option>
+        <option>Gujranwala</option>
+        <option>Bahawalpur</option>
+        <option>Sargodha</option>
+        <option>Abbottabad</option>
+        <option>Mirpur</option>
+        <option>Sukkur</option>
+        <option>Larkana</option>
+        <option>Muzaffarabad</option>
+        <option>Swat</option>
+        <option>Rahim Yar Khan</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="education">Education</label>
+      <select id="education" name="education" required>
+        <option value="Select Education">--Select Education--</option>
+        <option value="Matric">Matric</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Graduation">Graduation</option>
+        <option value="Masters">Masters</option>
+        <option value="PhD">PhD</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="mobile">Mobile No</label>
+      <input type="tel" id="mobile" name="mobile" pattern="[0-9]{11}" required>
+    </div>
+
+    <div class="form-group">
+      <label for="cnic">CNIC</label>
+      <input type="text" id="cnic" name="cnic" pattern="[0-9]{13}" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea id="address" name="address" rows="3" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="blood">Blood Group</label>
+      <select id="blood" name="blood" required>
+        <option value="Blood Group">--Select Blood Group--</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="picture">Upload Picture</label>
+      <input type="file" id="picture" name="picture" accept="image/*" required>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" class="submit-btn">Submit</button>
+    </div>
+  </form>
+
+</body>
+</html>

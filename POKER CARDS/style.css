@@ -1,0 +1,54 @@
+.box{
+    width: 175px;
+    height: 16rem;
+    margin-left: 30px;
+    margin-top: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
+.box>img{
+    transition-duration: 1s;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.boxes{
+    background-image: url(./bg\ \(2\).jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 607px;
+}
+.box1{
+    background-image: url(./king.png);
+    
+    
+}
+.box2{
+    background-image: url(./9.png);
+    background-repeat: no-repeat;
+}
+.box3{
+    background-image: url(./dukka.png);
+    background-repeat: no-repeat;
+}
+.box4{
+    background-image: url(./ikka.png);
+    background-repeat: no-repeat;
+}
+.box5{
+    background-image: url(./king.png);
+    background-repeat: no-repeat;
+}
+.box>img{
+    width: 175px;
+    height: 16rem;
+}
+.box>img:hover{
+    transform:rotateY(90deg) ;
+    cursor: pointer;
+
+}
