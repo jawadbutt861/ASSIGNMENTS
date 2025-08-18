@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+.btn{
+    background-color: rebeccapurple;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
